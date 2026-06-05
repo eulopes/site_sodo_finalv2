@@ -1307,3 +1307,50 @@ a { text-decoration: none; }
   border-radius: 6px;
   padding: 4px 6px;
 }
+
+/* ── PARCERIAS — NAV LINK ──────────────────────────────────── */
+.nav-link-parceria {
+  color: #4D8BFF !important;
+  font-weight: 600;
+  border: 1px solid rgba(77,139,255,0.3);
+  border-radius: 6px;
+  padding: 5px 12px;
+  transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base);
+}
+.nav-link-parceria:hover {
+  background: rgba(77,139,255,0.12);
+  border-color: rgba(77,139,255,0.6);
+  color: #fff !important;
+}
+
+.nav-link-parceria-mobile {
+  color: #4D8BFF !important;
+  font-weight: 600;
+}
+
+/* ── PARCERIAS — CTA BANNER ────────────────────────────────── */
+.parceria-cta-banner {
+  background: linear-gradient(135deg, #0033A0 0%, #112240 60%, #0A1118 100%);
+  border: 1px solid rgba(77,139,255,0.25);
+  border-radius: 16px;
+  padding: 48px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.parceria-cta-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 90% 50%, rgba(77,139,255,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .parceria-cta-banner {
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .parceria-cta-banner .flex {
+    justify-content: center;
+  }
+}
